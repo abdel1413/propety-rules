@@ -1,6 +1,21 @@
 :root{
     --primary-color: #3498db;
     --btn-bg: var(--primary-color);
+    --bg-color: white;
+    --text-color: black;
+
+
+}
+
+ .testing-custom-override{
+    --bg-color: #333;
+    --text-color: white;
+
+ }
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 /* @property */
@@ -9,6 +24,9 @@
     inherits: false;
     initial-value: #FAFAAB;
  }
+
+
+
 
  .button-1{
     background-color: var(--main-color);
@@ -142,7 +160,8 @@ tr{
   height: 20px;
   border: 2px solid black;
   align-items: center;
-   background-image: linear-gradient(90deg, var(--color0) 0% 16.7%, var(--color1) 16.7% 33.4%, var(--color2) 33.4% 50.1%, var(--color3) 50.1% 66.8% , var(--color4) 66.8% 83.5%, var(--color5)83.5% 100%)
+   background-image:
+    linear-gradient(90deg, var(--color0) 0% 16.7%, var(--color1) 16.7% 33.4%, var(--color2) 33.4% 50.1%, var(--color3) 50.1% 66.8% , var(--color4) 66.8% 83.5%, var(--color5) 83.5% 100%)
  
 }
 #legend-gradient .bars{
@@ -151,4 +170,35 @@ tr{
   margin: 0 15px;
 
    
+}
+
+
+/* Grid */
+.css-grid-container{
+  width: 90%;
+   border: 2px solid green;
+   background-color: #CDFECD;
+}
+
+.css-grid-container h1{
+    text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.item {
+  background-color: lightgray;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
