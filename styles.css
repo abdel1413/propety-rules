@@ -268,3 +268,51 @@ tr{
 .item7{
     grid-column: 3/span 2;
 }
+
+/* GRID CONTAINER AREA*/
+
+.grid-container-area{
+    display: grid;
+    grid-template-areas: 'header header header'
+    'sidebar-left main sidebar-right'
+    'footer footer footer';
+    background-color:  #2196F3;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.header{
+    grid-area: header;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar-left{
+  grid-area: sidebar-left;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  text-align: center;
+
+}
+
+.main{
+    grid-area: main;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar-right{
+    grid-area: sidebar-right;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: center;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgba(255, 255, 255, 0.8);
+    pad: 10px;
+    text-align: center;
+}
